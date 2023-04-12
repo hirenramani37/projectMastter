@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorActionBackground">#314977</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorCenter">#243557</color>
+    <color name="colorEnd">#172237</color>
+    <color name="colorStart">#314977</color>
+    <color name="colorViewMore">#FF6F32</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="error">#E31B00</color>
+    <color name="success">#3A9F3E</color>
+    <color name="warning">#EDBE2D</color>
+    <string name="app_name">Nik-Notify</string>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_hide_to_left</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide_to_left</item>
+    </style>
+    <declare-styleable name="ViewMoreTextView">
+        <attr format="integer" name="visibleLines"/>
+        <attr format="boolean" name="isExpanded"/>
+        <attr format="integer" name="duration"/>
+        <attr format="color" name="foregroundColor"/>
+        <attr format="string" name="ellipsizeText"/>
+        <attr format="boolean" name="isUnderlined"/>
+        <attr format="color" name="ellipsizeTextColor"/>
+    </declare-styleable>
+</resources>

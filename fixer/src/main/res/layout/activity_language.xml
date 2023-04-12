@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.language.LanguageActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:src="@drawable/ic_black_logo"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            style="@style/styleTextBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/select_language"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toBottomOf="@id/ivIcon" />
+
+        <TextView
+            android:id="@+id/tvSelectLanguage"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="@string/please_select_the_language"
+            android:textColor="@color/colorBlackHelp"
+            android:textSize="@dimen/_12ssp"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toBottomOf="@id/tvLanguage" />
+
+        <RadioGroup
+            android:id="@+id/rgLanguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toBottomOf="@id/tvSelectLanguage">
+
+            <RadioButton
+                android:id="@+id/rbArabic"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:button="@drawable/bg_radiobutton"
+                android:layoutDirection="rtl"
+                android:checked="false"
+                android:text="@string/arabic"
+                android:textColor="@color/tex_grayTwo"
+                android:textSize="@dimen/_12ssp"
+                android:paddingStart="@dimen/_5sdp"
+                app:layout_constraintTop_toTopOf="@+id/tvArabic" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/colorHorizontalLine" />
+
+            <RadioButton
+                android:id="@+id/rbEnglish"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:checked="true"
+                android:button="@drawable/bg_radiobutton"
+                android:layoutDirection="rtl"
+                android:text="@string/english"
+                android:paddingStart="@dimen/_5sdp"
+                android:textColor="@color/tex_grayTwo"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/bContinue"
+            style="@style/styleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:text="@string/continuee"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

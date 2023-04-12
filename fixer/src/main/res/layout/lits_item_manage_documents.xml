@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDocumentName"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlackHelp"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Documents" />
+
+        <TextView
+            android:id="@+id/btnAddFront"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_round_chat"
+            android:drawablePadding="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:text="@string/add"
+            app:layout_constraintTop_toTopOf="@+id/tvDocumentName"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDocumentName"
+            android:textColor="@color/colorBlackHelp"
+            android:textSize="@dimen/_11ssp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:drawableStartCompat="@drawable/ic_add" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="4"
+            app:layout_constraintTop_toBottomOf="@+id/tvDocumentName"
+            tools:listitem="@layout/list_item_document" />
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgDoc"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_12sdp"-->
+<!--            android:src="@drawable/ic_document"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/tvDocumentName" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/lblDocumentName"-->
+<!--            style="@style/styleTextSemiMedium"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="@dimen/_10sdp"-->
+<!--            android:singleLine="true"-->
+<!--            android:text="@string/document_name"-->
+<!--            android:textColor="@color/tex_grayTwo"-->
+<!--            android:textSize="@dimen/_14sdp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/imgDoc"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/imgDelete"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imgDoc"-->
+<!--            app:layout_constraintTop_toTopOf="@id/imgDoc" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgDelete"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="@dimen/_5sdp"-->
+<!--            android:src="@drawable/ic_delete"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/lblDocumentName"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@id/lblDocumentName" />-->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/colorHorizontalLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvDoc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item android:drawable="@drawable/ic_fill_down_arrow"
+                android:end="@dimen/_8sdp"
+                android:gravity="center_vertical|end" />
+        </layer-list>
+    </item>
+</selector>

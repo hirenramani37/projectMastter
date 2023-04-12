@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvCategoryTitle"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/colorAccent"
+            android:drawablePadding="@dimen/_5sdp"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/colorBlackHelp"
+            android:textSize="@dimen/_11sdp"
+            app:drawableEndCompat="@drawable/ic_cancel_service"
+            tools:text="Help Moving" />
+
+    </LinearLayout>
+
+</layout>
+

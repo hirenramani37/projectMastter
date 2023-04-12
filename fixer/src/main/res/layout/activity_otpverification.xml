@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.language.login.register.verify.OTPVerificationActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_black_logo"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOTPVerification"
+            style="@style/styleTextBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/otp_verification"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toBottomOf="@id/ivIcon" />
+
+        <TextView
+            android:id="@+id/tvNumber"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            tools:text="@string/please_enter_the_4_digit"
+            android:textColor="@color/colorBlackHelp"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toBottomOf="@id/tvOTPVerification" />
+
+        <LinearLayout
+            android:id="@+id/otp_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toBottomOf="@+id/tvNumber">
+
+            <com.chaos.view.PinView
+                android:id="@+id/pvOTP"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_15ssp"
+                android:itemBackground="@drawable/edit_box_bg"
+                android:textStyle="normal"
+                app:cursorColor="#B5B7B9"
+                app:cursorWidth="@dimen/_2sdp"
+                app:itemCount="4"
+                app:itemHeight="@dimen/_45sdp"
+                app:itemRadius="@dimen/_4sdp"
+                app:itemSpacing="@dimen/_20sdp"
+                app:itemWidth="@dimen/_40sdp"
+                app:lineColor="@drawable/line_color"
+                app:lineWidth="@dimen/_1sdp"
+                app:viewType="rectangle">
+
+                <requestFocus />
+            </com.chaos.view.PinView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVerify"
+            style="@style/styleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_110sdp"
+            android:text="@string/verify"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart">
+
+            <TextView
+                android:id="@+id/tvVerificationAccount"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tex_grayTwo"
+                android:text="@string/if_you_didn_t_receive_a_code"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvResend"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resend"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

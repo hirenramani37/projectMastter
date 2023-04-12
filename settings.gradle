@@ -1,0 +1,4 @@
+include ':user'
+include ':sneaker'
+include ':fixer',':massttr_utility',':nik-notify'
+rootProject.name = "Massttr"

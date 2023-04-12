@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مزود الخدمة</string>
+
+    <string name="channel_id_chat">Chat</string>
+
+    <string name="no_internet">No Internet Connected</string>
+    <string name="maps_api_key">AIzaSyBJrJjwOvvii1IUhkjz3XaYPpLic_OU9Xo</string>
+    <string name="msg_no_internet">No Internet connection found. Check your connection try again.</string>
+    <string name="something_went_wrong">يبدوا ان هناك خطأ ما ,يرجى المحاولة مرة اخرى …</string>
+    <string name="time_out">Response time out</string>
+    <string name="alert">Alert</string>
+    <string name="ok">OK</string>
+    <string name="i_am_so_happy_to_see_you">سعداء جداًَ لرؤيتك .يمكنك الاستمرار بتسجيل الدخول لأدارة اعمالك</string>
+    <string name="welcome_back">مرحبا بك</string>
+    <string name="enter_mobile_number">ادخل رقم الهاتف</string>
+    <string name="request_otp">طلب الرمز</string>
+    <string name="already_have_an_account">هل لديك حساب مسبقاًَ؟ سجل الدخول الان </string>
+    <string name="don_t_have_an_account">انت غير مسجل مسبقا؟</string>
+    <string name="register"> سجل الآن !</string>
+    <string name="select_reason">اختر السبب</string>
+    <!--  TODO: Remove or change this placeholder text  -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_profile">صفحتي الشخصية</string>
+    <string name="inbox">الرسائل الواردة</string>
+    <string name="image_description">image Description</string>
+    <string name="completed_tasks">المهمات المكتملة</string>
+    <string name="manage">ادارة</string>
+    <string name="typing">يكتب…</string>
+    <string name="earning">الارباح</string>
+    <string name="arabic">اللغة العربية</string>
+    <string name="your_are_delete_account">حذف حسابك</string>
+    <string name="are_you_sure_want_to">هل انت متأكد بأنك تريد تسجيل الخروج؟</string>
+    <string name="cancel">الغاء</string>
+    <string name="help_center">مركز المساعدة والدعم</string>
+    <string name="logout">خروج</string>
+    <string name="create_an_account">انشيء حساب لتتمكن من ادارة اعمالك </string>
+    <string name="create_a_new_account">انشاء حساب جديد</string>
+    <string name="create_a_account_so_you">انشاء حساب للتمكن من ادارة الاعمال</string>
+    <string name="john_smith">John Smith</string>
+    <string name="_9889854">9889854</string>
+    <string name="don_t_have_an">لا يوجد لديك حساب ؟ سجل الان</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="please_enter_number">Please enter valid number</string>
+    <string name="enter_valid_mobile_number">يرجى ادخال رقم صالح</string>
+    <string name="success_">النجاح</string>
+    <string name="otp_resend_">OTP resend successfully</string>
+    <string name="please_enter_Fname">يرجى ادخال اسمك</string>
+    <string name="please_enter_Lname">يرجى ادخال اسم الاب</string>
+    <string name="please_enter_name">ادخل اسمك الكامل</string>
+    <string name="otp_verification">التحقق من الرمز</string>
+    <string name="please_enter_the_4_digit"> يرجى ادخال الرمز المرسل على الهاتف الخاص بك المتكون من 4 ارقام<font color="#ffcb31">(يتغير)</font></string>
+    <string name="verify">تحقق</string>
+    <string name="if_you_didn_t_receive_a_code">إذا لم تتلق رمزًا!</string>
+    <string name="resend">إعادة إرسال</string>
+    <string name="change">(تغيير)</string>
+    <string name="please_enter_OTP">يرجى ادخال رمز التحقق المرسل الى هاتفك</string>
+    <string name="verified">تم التحقق !</string>
+    <string name="your_mobile_number_has_been">تم التحقق من رقم الهاتف الخاص بك بنجاح</string>
+    <string name="done">استمرار</string>
+    <string name="select_language">يرجى اختيار اللغة اللتي تناسبك</string>
+    <string name="please_select_the_language">يرجى اختيار اللغة لسهولة اكثر</string>
+    <string name="english">اللغة الانكليزية</string>
+    <string name="continuee">استمر</string>
+    <string name="thank_you">شكرا لك</string>
+    <string name="your_profile_has_been_successfully_created">ملفك الشخصي تمت اضافته بنجاح</string>
+    <string name="please_enter_document">يرجى ادخال اسم المستمسك</string>
+    <string name="faq">اسئلة شائعة</string>
+    <string name="selected_Date">%d/%d/%d</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="terms_condition">الاحكام والشروط</string>
+    <string name="privacy_policy_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </string>
+    <string name="add_or_upload_documents">ارفع الوثائق الضرورية</string>
+    <string name="education_document">وثائق التحصيل الدراسي</string>
+    <string name="enter_your_education_document">ادخل وثائق التحصيل الدراسي</string>
+    <string name="upload_document">Please upload education document</string>
+    <string name="submit">حفظ</string>
+    <string name="add_and_upload_your_document">اضافة او رفع الوثائق</string>
+    <string name="notification">الاشعارات</string>
+    <string name="available">متوفرة</string>
+    <string name="not_available">غير متوفر</string>
+    <string name="my_upcoming_fix">المهمات القادمة</string>
+    <string name="good_job">عاشت ايدك</string>
+    <string name="your_task_has_now_ended">انتهت مهمتك</string>
+    <string name="end_task">انهاء المهمة</string>
+    <string name="are_you_sure_you_want_to_end_the_task">هل انت متأكد من انك تريد انهاء المهمة؟</string>
+    <string name="no">لا</string>
+    <string name="yes_cancel">نعم , الغاء</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="_30">$30</string>
+    <string name="chat">محادثة</string>
+    <string name="_25_5_2020_3_30_pm">25–5–2020, 3:30 PM</string>
+    <string name="lorem_iphum_is">Lorem Iphum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry\'s standard dummy text ever since the 1500s</string>
+    <string name="pending">قيد التنفيذ</string>
+    <string name="gril_machine">GRIL MACHINE</string>
+    <string name="pvc_pipe">PVC PIPE</string>
+    <string name="tee_joiner">TEE JOINER</string>
+    <string name="lorem_ipsum_is_simply_dummy">"Lorem ipsum is simply dummy text printing and typesetting industry…</string>
+    <string name="today">اليوم</string>
+    <string name="yesterday">أمس</string> 
+    <string name="you_have_received_a_new_task_request">لقد استلمت طلب مهمة جديدة</string>
+    <string name="_09_43_am">09:43 AM</string>
+    <string name="view_receipt">اضهار الفاتورة</string>
+    <string name="complete_task">اكتمال المهمة</string>
+    <string name="earnings">الارباح</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="enter_first_name_here">ادخل الاسم الاول</string>
+    <string name="enter_last_name_here">ادخل الاسم الاخير</string>
+    <string name="enter_dob">ادخل تاريخ الميلاد</string>
+    <string name="enter_email_id">ادخل البريد الالكتروني</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثى</string>
+    <string name="zip_code">رمز البلد</string>
+    <string name="address">العنوان</string>
+    <string name="please_choose">يرجى تحديد عيد ميلادك</string>
+    <string name="please_enter_address">يرجى ادخال العنوان</string>
+    <string name="please_enter_company_name">Please Enter Company name</string>
+    <string name="please_enter_cvr">Please Enter CVR Number</string>
+    <string name="please_enter_add">Please Enter company address</string>
+    <string name="please_enter_service">Please Enter Services</string>
+    <string name="please_enter_categories">Please Enter Categories</string>
+    <string name="please_enter_skills">Please Enter Skills</string>
+    <string name="please_enter_services">Please describe services</string>
+    <string name="registration">التسجيل</string>
+    <string name="next">التالي</string>
+    <string name="available_tasks">المهمات المتوفرة</string>
+    <string name="company_name">اسم الشركة</string>
+    <string name="company_details">معلومات الشركة</string>
+    <string name="cvr_number">رقم العمل</string>
+    <string name="company_e_mail_id">البريد الالكتروني للشركة</string>
+    <string name="company_to_receive_the_receipt">هل ترغب لشركتك استلام الايصال ؟ </string>
+    <string name="km">كيلومتر</string>
+    <string name="km_">كم</string>
+    <string name="_50km">50 كم</string>
+    <string name="previous">السابق</string>
+    <string name="documents">المستمسكات المطلوبة</string>
+    <string name="manage_service">ادارة خدماتك</string>
+    <string name="identification">رخصة</string>
+    <string name="driving_license_passport">(سياقة ، جواز)</string>
+    <string name="upload_driving_license_passport">Upload the necessary document</string>
+    <string name="health_insurance_card">بطاقة الضمان الصحي</string>
+    <string name="education">التحصيل الدراسي</string>
+    <string name="other_documents">وثائق اخرى</string>
+    <string name="add">اضافة</string>
+    <string name="service">خدمات</string>
+    <string name="select_type_of_service">اختر نوع الخدمة</string>
+    <string name="select_subcategories">اختر التصنيف الفرعي</string>
+    <string name="add_your_skills">اضافة مهاراتك</string>
+    <string name="briefly_describe_your_services">بأختصار اوصف خدماتك</string>
+    <string name="required_equipment">الادوات المطلوبة</string>
+    <string name="cancle_task">الغاء المهمة</string>
+    <string name="type">يكتب…</string>
+    <string name="start_task">بدأ المهمة</string>
+    <string name="photos_of_the_task">صور المهمة</string>
+    <string name="online">\u25CF متواجد</string>
+    <string name="offline">غير متواجد</string>
+    <string name="add_task_photo">اضافة صورة المهمة</string>
+    <string name="add_or_upload_task_photo">اضافة او رفع صورة للمهمة</string>
+    <string name="your_task_start_now">لقد بدأت مهمتك الآن</string>
+    <string name="description">اشرح السبب</string>
+    <string name="send">ارسال</string>
+    <string name="we_have_received_your_request_your_task_is_now_cancelled">لقد تلقينا طلبك , مهمتك تم الغاؤها</string>
+    <string name="go_to_home">اذهب للصفحة الرئيسية</string>
+    <string name="yes">نعم</string>
+    <string name="available_job">مهمة متوفرة</string>
+    <string name="accept">قبول</string>
+    <string name="photos_of_the_completed_task">صور المهمة المكتملة</string>
+    <string name="download">تحميل</string>
+    <string name="your_receipt_has_been_successfully_downloaded">تم تحميل فاتورتك بنجاح</string>
+    <string name="identification_driving_license_passport">Identification\n(driving license/passport)</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="update_profile">تعديل الصفحة الشخصية</string>
+    <string name="delete_your_account">حذف حسابك</string>
+    <string name="fixer_registration">تسجيل مزود الخدمة</string>
+    <string name="task">مهمة</string>
+    <string name="iraq">العراق</string>
+    <string name="personal_details">المعلومات الشخصية</string>
+    <string name="yes_delete">نعم , حذف</string>
+    <string name="delete_account">حذف الحساب</string>
+    <string name="document_name">اسم الملف (PDF)</string>
+    <string name="log_out">هل تريد تسجيل الخروج ؟</string>
+    <string name="logout_two">خروج</string>
+    <string name="interested">Interested</string>
+    <string name="select_location">اختر الموقع</string>
+    <string name="_1_may_to_15_may_2020">1 مايو to 15 مايو 2020</string>
+    <string name="no_notification">لا يوجد اشعارات</string>
+    <string name="no_messages_in_your_inbox_a_yet">لا توجد رسائل في صندوقك الوارد بعد</string>
+    <string name="no_task_found">لم يتم العثور على مهمات متوفرة</string>
+    <string name="you_have_not_any_task_yet">لا يوجد لديك اعمال او مهمات بعد</string>
+    <string name="enter_full_name_here">ادخل الاسم الكامل</string>
+    <string name="next_payout_date_16_may_to_30_may_2021">موعد الدفع القادم 16 مايو إلى 30 مايو 2021</string>
+    <string name="total_payout">مجموع الارباح</string>
+    <string name="task_title">عنوان المهمة</string>
+    <string name="you_have_no_message">لا توجد لديك رسائل بعد</string>
+    <string name="your_inbox_is_empty">بريدك الوارد فارغ</string>
+    <string name="date">التاريخ</string>
+    <string name="change_price">تغيير السعر</string>
+    <string name="residence_card">هواية الاحوال الوجه الاخر</string>
+    <string name="resume">سيرة ذاتية</string>
+    <string name="national_id_front">هوية الاحوال او البطاقة الموحدة</string>
+    <string name="national_id_back">هواية الاحوال الوجه الاخر</string>
+    <string name="are_you_sure_you_want_to_cancel_the_task">هل انت متأكد من الغاء هذه المهمة؟</string>
+    <string name="completed">مكتمل</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="commission">العمولة</string>
+    <string name="total_earning">الأرباح الكلية</string>
+    <string name="earnings_not_found">لم يتم العثور على الأرباح</string>
+    <string name="no_order_found">لا توجد طلبات</string>
+    <string name="you_have_not_any_order_yet">لا توجد لديك اي طلبات بعد</string>
+    <string name="q">س</string>
+    <string name="a">ج</string>
+    <string name="on">متوفر</string>
+    <string name="off">غير متوفر</string>
+    <string-array name="select_reason">
+        <item>اختر السبب</item>
+        <item>General</item>
+        <item>تتبع الطلبات</item>
+        <item>دفعات ذات صلة</item>
+        <item>الخدمة</item>
+        <item>دفعات ذات صلة</item>
+        <item>اخرى</item>
+    </string-array>
+    <string-array name="select_city">
+        <item>المدينة</item>
+        <item>Iran</item>
+    </string-array>
+    <string-array name="select_state">
+        <item>الولاية او المحافظة</item>
+        <item>Iran</item>
+    </string-array>
+
+    <string-array name="cancel_reason">
+        <item>Cancel Reason</item>
+        <item>Time Problem</item>
+        <item>Money High</item>
+        <item>Fixer not Perfect</item>
+        <item>Not Available</item>
+        <item>Other reason</item>
+    </string-array>
+
+</resources>

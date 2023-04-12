@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/navHomeFragment">
+
+    <fragment
+        android:id="@+id/navHomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:name="com.massttr.user.ui.main.home.HomeFragment"
+        android:label="HomeFragment" />
+
+    <fragment
+        android:id="@+id/navInboxFragment"
+        tools:layout="@layout/fragment_inbox"
+        android:name="com.massttr.user.ui.main.inbox.InboxFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/navNotificationFragment"
+        tools:layout="@layout/fragment_notification"
+        android:name="com.massttr.user.ui.main.notification.NotificationFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/navMyProfileFragment"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.massttr.user.ui.main.myprofile.MyProfileFragment"
+        android:label="HomeFragment" />
+
+</navigation>

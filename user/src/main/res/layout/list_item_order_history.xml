@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_14sdp"
+        android:paddingVertical="@dimen/_8sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfile"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/img_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOrderName"
+            style="@style/styleTextBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:singleLine="true"
+            android:text="@string/fixer_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorBlackHelp"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="@id/civProfile"
+            app:layout_constraintEnd_toStartOf="@id/tvOrderPrice"
+            app:layout_constraintStart_toEndOf="@id/civProfile"
+            app:layout_constraintTop_toTopOf="@id/civProfile" />
+
+        <TextView
+            android:id="@+id/tvOrderPrice"
+            style="@style/styleTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlackHelp"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="@id/civProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvOrderName"
+            app:layout_constraintTop_toTopOf="@id/civProfile"
+            tools:text="@string/_20" />
+
+        <TextView
+            android:id="@+id/tvOrderDescription"
+            style="@style/styleTextRegular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:textAlignment="viewStart"
+            android:textColor="@color/tex_grayTwo"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@id/tvOrderPrice"
+            app:layout_constraintStart_toStartOf="@id/tvOrderName"
+            app:layout_constraintTop_toBottomOf="@id/civProfile"
+            tools:text="@string/lorem" />
+
+        <TextView
+            android:id="@+id/tvViewFixer"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/bg_round_order"
+            android:backgroundTint="@color/color_blue_lite"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="@string/view_fixer"
+            android:textAllCaps="true"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintStart_toStartOf="@id/tvOrderDescription"
+            app:layout_constraintTop_toBottomOf="@id/tvOrderDescription" />
+
+        <TextView
+            android:id="@+id/tvEditPrice"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/bg_round_order"
+            android:backgroundTint="@color/light_yellow"
+            android:drawablePadding="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="@string/edit_price"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_9sdp"
+            app:drawableStartCompat="@drawable/ic_edit_yellow"
+            app:layout_constraintEnd_toEndOf="@id/tvOrderPrice"
+            app:layout_constraintTop_toBottomOf="@id/tvOrderDescription" />
+
+        <TextView
+            android:id="@+id/tvDownload"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/bg_round_download"
+            android:drawablePadding="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="@string/download"
+            android:textAllCaps="false"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_9sdp"
+            android:visibility="gone"
+            app:drawableStartCompat="@drawable/ic_download"
+            app:layout_constraintEnd_toEndOf="@id/tvOrderPrice"
+            app:layout_constraintTop_toBottomOf="@id/tvOrderDescription" />
+
+        <TextView
+            android:id="@+id/tvOrderDate"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center_vertical"
+            android:textAllCaps="false"
+            android:textColor="@color/tex_grayTwo"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/tvOrderDescription"
+            app:layout_constraintTop_toBottomOf="@id/tvViewFixer"
+            tools:text="@string/_08_sep_2021_03_30_pm" />
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@color/box_gray"
+            app:layout_constraintTop_toBottomOf="@id/tvOrderDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

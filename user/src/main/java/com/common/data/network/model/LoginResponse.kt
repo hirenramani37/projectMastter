@@ -1,0 +1,25 @@
+package com.common.data.network.model
+
+data class LoginResponse(
+    val address: String,
+    val chat_id: String,
+    val chat_password: String,
+    val country_code: Int,
+    val current_version: String,
+    val default_lang: String,
+    val device_token: String,
+    val device_type: String,
+    val email: String,
+    val first_name: String,
+    val full_name: String,
+    val id: Int,
+    val is_active: Int,
+    val is_registered: Int,
+    val is_verify: Int,
+    val last_name: String,
+    val mobile_no: String,
+    val otp: String,
+    val token: String,
+    val updated_at: String,
+    val zipcode: String,
+)

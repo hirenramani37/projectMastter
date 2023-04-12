@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.myprofiles.editProfile.fragment.PersonalDetailsFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etFName"
+                        style="@style/styleEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_full_name_here"
+                        android:inputType="textPersonName" />
+
+                    <LinearLayout
+                        android:id="@+id/lLEdittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/edit_box_bg"
+                        android:padding="@dimen/_5sdp"
+                        app:layout_constraintEnd_toEndOf="@id/glEnd"
+                        app:layout_constraintStart_toStartOf="@id/glStart"
+                        app:layout_constraintTop_toBottomOf="@id/lLEdittext1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:src="@drawable/ic_iraq_flag" />
+
+                        <View
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:background="#b5b7b9" />
+
+                        <EditText
+                            android:id="@+id/etMno"
+                            style="@style/styleTextSemiMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:background="@null"
+                            android:inputType="number"
+                            android:padding="@dimen/_10sdp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorBlackHelp"
+                            android:textColorHint="@color/colorBlack"
+                            android:textSize="@dimen/_12ssp"
+                            tools:text="9898784514" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etLEmail"
+                        style="@style/styleEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:hint="@string/enter_email_id"
+                        android:inputType="textEmailAddress" />
+
+                    <TextView
+                        android:id="@+id/tvDateDOB"
+                        style="@style/styleEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:hint="@string/enter_dob"
+                        android:singleLine="true"
+                        app:drawableEndCompat="@drawable/ic_date"
+                        tools:ignore="RtlCompat" />
+
+                    <RadioGroup
+                        android:id="@+id/llGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbMale"
+                            style="@style/styleTextSemiMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_button"
+                            android:checked="true"
+                            android:minHeight="48dp"
+                            android:paddingHorizontal="@dimen/_5sdp"
+                            android:text="@string/male"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/tex_grayTwo"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <RadioButton
+                            android:id="@+id/rbFemale"
+                            style="@style/styleTextSemiMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_button"
+                            android:checked="false"
+                            android:minHeight="48dp"
+                            android:paddingHorizontal="@dimen/_5sdp"
+                            android:text="@string/female"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/tex_grayTwo"
+                            android:textSize="@dimen/_12sdp" />
+                    </RadioGroup>
+
+                    <RelativeLayout
+                        android:id="@+id/rlAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintTop_toBottomOf="@id/etLEmail">
+
+                        <EditText
+                            android:id="@+id/etAddress"
+                            style="@style/styleTextSemiMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_80sdp"
+                            android:background="@drawable/edit_box_bg"
+                            android:gravity="top"
+                            android:hint="@string/address"
+                            android:importantForAutofill="no"
+                            android:lines="3"
+                            android:outlineProvider="none"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_18sdp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorBlackHelp"
+                            android:textColorHint="@color/tex_grayTwo"
+                            android:textSize="@dimen/_12sdp"
+                            tools:ignore="RtlCompat" />
+
+                        <ImageView
+                            android:id="@+id/imgLocation"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@drawable/bg_location_round"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/_6sdp"
+                            android:src="@drawable/ic_map" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/spCity"
+                        style="@style/styleEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:inputType="text"
+                        android:hint="@string/city" />
+
+                    <EditText
+                        android:id="@+id/spState"
+                        style="@style/styleEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:inputType="text"
+                        android:hint="@string/state" />
+
+                    <EditText
+                        android:id="@+id/edZipCode"
+                        style="@style/styleEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:hint="@string/zip_code"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

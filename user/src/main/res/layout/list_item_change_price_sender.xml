@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6sdp"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_2sdp">
+
+        <LinearLayout
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sent_message_bubble"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:maxWidth="@dimen/_230sdp"
+                android:id="@+id/tvChangePrice"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_18sdp"
+                tools:text="20 QD" />
+
+            <TextView
+                style="@style/styleTextSemiMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:maxWidth="@dimen/_230sdp"
+                android:text="@string/change_price"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="end"
+            android:id="@+id/tvMyTime"
+            style="@style/styleTextRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textColor="@color/tex_grayTwo"
+            android:textSize="@dimen/_9sdp"
+            tools:text="16:59 pm" />
+
+    </LinearLayout>
+
+</layout>

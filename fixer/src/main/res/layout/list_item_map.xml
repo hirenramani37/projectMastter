@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/clAvailableFix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/MainConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_3sdp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/civWorkimage"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_placeholder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="@dimen/_8sdp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/styleTextBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@id/ivCall"
+                app:layout_constraintStart_toEndOf="@id/civWorkimage"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Chirag Variya" />
+
+            <ImageView
+                android:id="@+id/ivCall"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/notification_round"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_call_black"
+                app:layout_constraintStart_toEndOf="@id/tvTitle"
+                app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvTitle" />
+
+            <TextView
+                android:id="@+id/tvJobDateTime"
+                style="@style/styleTextRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintStart_toStartOf="@id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@id/ivCall"
+                tools:text="25-09-2020 3:30 Pm" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintEnd_toStartOf="@id/viewKm"
+                app:layout_constraintBottom_toBottomOf="@id/civWorkimage"
+                app:layout_constraintStart_toStartOf="@id/tvJobDateTime"
+                app:layout_constraintTop_toBottomOf="@+id/tvJobDateTime"
+                tools:text="$30" />
+
+            <LinearLayout
+                android:id="@+id/viewKm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_location_round"
+                android:padding="@dimen/_7sdp"
+                app:layout_constraintStart_toEndOf="@id/tvPrice"
+                app:layout_constraintBottom_toBottomOf="@id/tvPrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvPrice">
+
+                <ImageView
+                    android:id="@+id/ivLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/ic_location_black" />
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    style="@style/styleTextSemiMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlackHelp"
+                    android:textSize="@dimen/_11sdp"
+                    tools:text="4.5 km" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

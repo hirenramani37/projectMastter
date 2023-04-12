@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Massttr</string>
+    <string name="maps_api_key">AIzaSyBJrJjwOvvii1IUhkjz3XaYPpLic_OU9Xo</string>
+
+    <string name="channel_id_chat">Chat</string>
+
+    <string name="no_internet">No Internet Connected</string>
+    <string name="msg_no_internet">No Internet connection found. Check your connection try again.</string>
+    <string name="something_went_wrong">يبدوا ان هناك خطأ ما ,يرجى المحاولة مرة اخرى …</string>
+    <string name="time_out">خطأً , انتهت مهلة الطلب</string>
+    <string name="alert">Alert</string>
+    <string name="select_location">اختر الموقع</string>
+
+    <string name="ok">OK</string>
+    <string name="enter_name_of_location">ادخل اسم الموقع</string>
+    <string name="next">التالي</string>
+    <string name="task_title">اكتب نوع الطلب, مثل: عامل خدمة - فني تبريد او حلاق ..الخ</string>
+    <string name="otp_resend">تم اعادة ارسال الكود بنجاح</string>
+    <string name="completed">مكتملة</string>
+    <string name="pending">قيد التنفيذ</string>
+    <string name="description">وصف الطلب او المشكلة</string>
+    <string name="previous">السابق</string>
+    <string name="elaborate_type_of_service">اختر تفاصيل القسم</string>
+    <string name="required_skills">المهارات المطلوبة - مثل : سباك, فني ستلايت , كهربائي ..</string>
+    <string name="task_has_been_n_successfully_completed">المهمة اكتملت بنجاح</string>
+    <string name="_09_30_am">09:30 صباحا</string>
+    <string name="today">اليوم</string>
+    <string name="yesterday">البارحة</string>
+    <string name="notification">الاشعارات</string>
+    <string name="enter_task_title">يرجى ادخال نوع الطلب</string>
+    <string name="enter_task_disc">يرجى وصف مهمتك باختصار</string>
+    <string name="enter_required_skill">يرجى ادخال المهارات المطلوبة لأكمال طلبك , مثل : فني كهرباء</string>
+    <string name="enter_full_task_price">يرجى ادخال السعر المتوقع للطلب</string>
+    <string name="enter_hourly_rate">معدل سعر الساعة المتوقع</string>
+    <string name="enter_hours">ادخل الساعات</string>
+    <string name="choose_date">يرجى تحديد تاريخ الحجز</string>
+    <string name="no_fixer_available">لا يوجد مزود خدمة متاح</string>
+    <string name="select_subcategory">حدد فئة فرعية</string>
+
+    <string name="choose_time">يرجى تحديد وقت الموعد</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam beatae deleniti dolorum exercitationem laboriosam libero magni, maiores minima mollitia nisi numquam porro provident quam, quasi quo rem. Amet aut consequuntur deleniti et excepturi hic</string>
+    <string-array name="category_option">
+        <item>اختار نوع الخدمة</item>
+    </string-array>
+    <string name="my_profile">صفحتي الشخصية</string>
+    <string name="faq">اسئلة واجوبة</string>
+    <string name="selected_Date">%d-%d-%d</string>
+    <string name="privacy_policy">سياستنا</string>
+    <string name="terms_condition">تعليمات والشروط</string>
+    <string name="privacy_policy_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </string>
+    <string name="request_otp">طلب الرمز</string>
+    <string name="please_enter_the_4_digit">يرجى ادخال الرمز المرسل على الهاتف الخاص بك المتكون من 4 ارقام<font color="#ffcb31">(تغيير)</font></string>
+    <string name="create_profile">عمل صفحة شخصية</string>
+    <string name="enter_first_name_here">يرجى ادخال الاسم الاول</string>
+    <string name="enter_last_name_here">ادخل الاسم الاخير</string>
+    <string name="enter_dob">ادخل  تاريخ الميلاد ( اختياري )</string>
+    <string name="enter_email_id">ادخل البريد الالكتروني ( اختياري )</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثى</string>
+    <string name="zip_code">مفتاح الدولة ( اختياري )</string>
+    <string name="address">العنوان</string>
+    <string name="done">تم</string>
+    <string name="select_language">اختار اللغة</string>
+    <string name="please_select_the_language">يرجى ادخال اللغة اللتي تناسبك</string>
+    <string name="arabic">اللغة العربية</string>
+    <string name="english">اللغة الانكليزية</string>
+    <string name="continuee">استمرار</string>
+    <string name="welcome_back">اهلا وسهلا</string>
+    <string name="i_am_so_happy_to_see_you">وية تطبيق مسطر , كل الاعطال المنزلية صارت اسهل ! سجل دخولك عن طريق ادخال رقم موبايلك</string>
+    <string name="don_t_have_an_account">لا يوجد لديك حساب ؟</string>
+    <string name="register"> سجل الان</string>
+    <string name="otp_verification">رمز التحقق</string>
+    <string name="change">تغيير</string>
+    <string name="verify">تحقق</string>
+    <string name="if_you_didn_t_receive_a_code">ان لم تستلم الكود،</string>
+    <string name="resend">اعادة ارسال</string>
+    <string name="_0">0</string>
+    <string name="payment">الدفع</string>
+    <string name="_00iqd">0IQD</string>
+    <string name="confirm_details">تأكيد التفاصيل</string>
+    <string name="task_request">طلب مهمة</string>
+    <string name="do_you_want_to_pay_a_full_task_price">هل تريد ان تدفع السعر كامل</string>
+    <string name="yes">نعم</string>
+    <string name="clear">مسح</string>
+    <string name="now">حجز الآن</string>
+
+    <string name="no_i_want_to_pay_hourly_price">لا،اريد ان ادفع على ساعات العمل</string>
+    <string name="hourly_rate">السعر للساعة</string>
+    <string name="hours">ساعات</string>
+    <string name="full_task_price">ادخل السعر المتوقع لأصلاح او اتمام مهمتك</string>
+    <string name="timeline">الجدول الزمني</string>
+    <string name="when_do_you_want_the_task_done">متى تريد ان يزورك مزود الخدمة او الفني؟</string>
+    <string name="date">تاريخ</string>
+    <string name="time">وقت</string>
+    <string name="tool_request">الاداويت المطلوبة</string>
+    <string name="should_the_fixer_bring_any_tools">  هل يجب على مزود الخدمة جلب ادوات؟ اذا نعم قم بذكرها رجاءاً</string>
+    <string name="no">لا</string>
+    <string name="tool_request_optional">يرجى ذكر الادوات اللتي تريد من الفني جلبها معه</string>
+    <string name="enter_required_equipment">ادخل الادوات المطلوبة</string>
+    <string name="upload_task_photos">رفع صور العطل او المشكلة او المهمة</string>
+    <string name="photos_of_the_task">صور المهمة</string>
+    <string name="take_a_photos">التقاط صورة</string>
+    <string name="photos_of_task">صور المهمة</string>
+    <string name="total_price">المجموع</string>
+    <string name="date_time">تاريخ - وقت</string>
+    <string name="required_equipment">الادوات المطلوبة</string>
+    <string name="send">ارسال</string>
+    <string name="name">اسمك</string>
+    <string name="update_profile">تعديل الصفحة الشخصية</string>
+    <string name="you_have_placed_the_task">لقد قمت بوضع طلبك بنجاح , يمكنك الغاء الطلب قبل 24 ساعة قبل مجيء مزود الخدمة اليك</string>
+    <string name="confirm">تأكيد</string>
+    <string name="successfully">عاشت ايدك !</string>
+    <string name="all">الكل</string>
+    <string name="fixers">مزودين الخدمة او الفنيين</string>
+    <string name="_28_completed"> المكتملة  </string>
+    <string name="tasks">المهمة</string>
+    <string name="complete_task">اكتمال المهمة</string>
+    <string name="_4_5km">4.5كيلومتر</string>
+    <string name="_28_completed_tasks">المهمات المكتملة</string>
+    <string name="chat">محادثة</string>
+    <string name="filter">تصفية مزودين الخدمة حسب :</string>
+    <string name="rating">تقييم</string>
+    <string name="completed_jobs">الاعمال المنجزة</string>
+    <string name="education">التحصيل الدراسي</string>
+    <string name="schooling">مدرسة</string>
+    <string name="bachelor">بكلوريوس</string>
+    <string name="masters">ماجستير</string>
+    <string name="view_all">عرض الكل</string>
+    <string name="education_amp_experience">التحصيل الدراسي و الخبرة</string>
+    <string name="see_more">مشاهدة المزيد</string>
+    <string name="book_fixer">حجز مزود الخدمة</string>
+    <string name="online">\ u25CF متواجد</string>
+    <string name="go_to_order_history">الذهاب الى الطلبات السابقة</string>
+    <string name="fixer_name_has_accepted_the_job">وافق على المهمة</string>
+    <string name="type">يكتب…</string>
+<!--    <string name="change_price">تغيير السعر الى الدينار العراقي</string>-->
+    <string name="change_price">تغيير السعر</string>
+    <string name="submit">ارسال</string>
+    <string name="price">يالسعر</string>
+    <string name="fixer_name">Fixer Name</string>
+    <string name="typing">يكتب…</string>
+    <string name="congratulations">تهانينا</string>
+    <string name="rate_your_experience">قم بتقييم تجربتك</string>
+    <string name="are_you_satisfied_with_the_service">هل انت راضي على الخدمة؟</string>
+    <string name="the_job_is_complete_with_reviews_and_photos">المهمة اكتملت مع رأيك والصور</string>
+    <string name="create_a_new_account">انشاء حساب جديد</string>
+    <string name="create_a_account_so_you">انشاء حساب للتمكن من ادارة الاعمال</string>
+    <string name="john_smith">John Smith</string>
+    <string name="_9889854">9889854</string>
+    <string name="don_t_have_an">هل يوجد لديك حساب بالفعل؟ </string>
+    <string name="login"> سجل الدخول</string>
+    <string name="mastters">ماستتر</string>
+    <string name="thank_you">شكرا لك</string>
+    <string name="your_profile_has_been_successfully_created">تم اكمال صفحتك الشخصية بنجاح</string>
+    <string name="verified">تحقق</string>
+    <string name="your_mobile_number_has_been">تم التحقق من رقم الهاتف</string>
+    <string name="successfully_verified">successfully verified</string>
+    <string name="please_select_date">Please select date</string>
+    <string name="please_select_time">Please select time</string>
+    <string name="please_enter_number">يرجى ادخال رقم الموبايل</string>
+    <string name="please_enter_name">Please Enter Name</string>
+    <string name="please_enter_OTP">ادخل كود التحقق</string>
+    <string name="please_enter_first_name">يرجى ادخال اسمك</string>
+    <string name="please_enter_last_name">يرجى ادخال اسم الاب</string>
+    <string name="please_enter_email">يرجى ادخال بريد الكتروني</string>
+    <string name="please_enter_dob">يرجى تحديد عيد <ميلادك /></string>
+    <string name="please_enter_zip">يرجى ادخال مفتاح الدولة</string>
+    <string name="please_enter_address">يرجى ادخال العنوان</string>
+    <string name="please_select_category">الرجاء تحديد الفئة أولاً</string>
+    <string name="please_valid_phone">يرجى ادخال رقم صالح</string>
+    <string name="identification">الهوية</string>
+    <string name="insurance">الضمان</string>
+
+    <string name="success_">Success</string>
+    <string name="already_have_account">هل يوجد لديك حساب بالفعل؟ سجل الدخول</string>
+    <string name="enter_mobile_number">ادخل رقم الهاتف</string>
+    <string name="enter_valid_mobile_number">يرجى ادخال رقم صالح</string>
+    <string name="contact_us">الاتصال بنا</string>
+    <string name="order_history">الطلبات السابقة</string>
+    <string name="invite_friends">ارسال دعوة لصديق</string>
+    <string name="help_center">مركز سعادة العملاء</string>
+    <string name="_08_sep_2021_03_30_pm">08 Sep 2021,</string>
+    <string name="_03_30_pm">03:30  مساءا</string>
+    <string name="logout">خروج</string>
+    <string name="_20">$20</string>
+    <string name="you_have_not_any_order_yet">لا يوجد لديك طلبات بعد</string>
+    <string name="_11_11am">11:11صباحا</string>
+    <string name="_02">02</string>
+    <string name="logout_s">خروج؟</string>
+    <string name="delete_your_account">حذف حسابك</string>
+    <string name="delete_account">حذف الحساب</string>هل تريد الخروج من التطبيق؟
+    <string name="view_fixer">عرض مزود الخدمة</string>
+    <string name="edit_price">تعديل السعر</string>
+    <string name="are_you_sure_want_to">هل تريد الخروج من </string>
+    <string name="cancel">الغاء</string>
+    <string name="yes_delete">نعم ، حذف</string>
+    <string name="view_receipt">عرض الفاتورة</string>
+    <string name="download">تحميل</string>
+    <string name="your_receipt_has_been_successfully_downloaded">الوصل تم تحميلة بنجاح</string>
+    <string name="task_details">تفاصيل المهمة</string>
+    <string name="cancel_task">الغاء المهمة</string>
+    <string name="go_to_home">الذهاب الى الرئيسية</string>
+    <string name="task_price">سعر المهمة</string>
+    <string name="task_complete">اكتمال المهمة</string>
+    <string name="yes_cancel">نعم ، الغاء</string>
+    <string name="your_are_delete_account">هل انت متأكد من انك تريد حذف الحساب؟</string>
+    <string name="lastname">الاسم الاخير</string>
+    <string name="mobile_number">ادخل رقم الهاتف</string>
+    <string name="enter_date">ادخل  تاريخ الميلاد</string>
+    <string name="inbox">الوارد</string>
+    <string name="give_a_review">اعط تقييمك</string>
+    <string name="order_accepted">تمت الموافقة على الطلب</string>
+    <string name="fixer_profile">صفحة مزود الخدمة</string>
+    <string name="select_reason">اختار السبب</string>
+    <string name="select_type_service">اختر قسم الخدمة</string>
+    <string name="documents">المستمسكات المطلوبة</string>
+    <string name="photos_of_the_completed_task">صور للمهمة المنجزة</string>
+    <string name="your_please_give_your_review">مهمتك اكتملت يرجى وضع رأيك وصور المهمة</string>
+    <string name="enter_your_feedback">ادخل ملاحظاتك</string>
+    <string name="enter_task_price">يرجى ادخال السعر المتوقع للطلب</string>
+    <string name="no_notification">لا يوجد اشعارات</string>
+    <string name="no_messages_in_your">لا توجد رسائل في صندوق الوارد</string>
+    <string name="upload_banner_task">تحميل صور اضافية لطلبك</string>
+    <string name="no_order_found">لم يتم العثور على طلبات</string>
+    <string name="you_have_no_message">ليس لديك رسالة</string>
+    <string name="your_inbox_is_empty">صندوق الوارد الخاص بك فارغ.</string>
+    <string name="are_you_cancel_task">هل انت متأكد من الغاء هذه المهمة؟</string>
+    <string name="task_hour">ساعات</string>
+    <string name="notification_channel_fileupload">Upload</string>
+    <string name="no_fixer_profile_match_your">لا يوجد مزودين خدمة مطابقين للمواصفات اللتي طلبتها</string>
+    <string name="are_you_request">هل أنت متأكد أنك تريد إعادة تعيين طلب المهمة؟</string>
+    <string name="a">ج</string>
+    <string name="q">س</string>
+    <string-array name="select_reason">
+        <item>اختر السبب</item>
+        <item>General</item>
+        <item>Order Tracking</item>
+        <item>Payment Related</item>
+        <item>Service</item>
+        <item>Profile</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="cancel_reason">
+        <item>Cancel Reason</item>
+        <item>Time Problem</item>
+        <item>Money High</item>
+        <item>Fixer not Perfect</item>
+        <item>Not Available</item>
+        <item>Other reason</item>
+    </string-array>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.myprofiles.manages.ManageActivity">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/tool_bar" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBegin"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_15sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEnd"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/imgHelpCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/img_manage"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glBegin"
+            app:layout_constraintTop_toBottomOf="@id/toolBar" />
+
+        <ImageView
+            android:id="@+id/imgDocuments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/bg_round"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_faq"
+            app:layout_constraintStart_toStartOf="@id/glBegin"
+            app:layout_constraintTop_toBottomOf="@id/imgHelpCenter" />
+
+        <TextView
+            android:id="@+id/tvDocuments"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="@string/documents"
+            android:textColor="@color/colorBlackHelp"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="@id/imgDocuments"
+            app:layout_constraintEnd_toStartOf="@+id/imgBack1"
+            app:layout_constraintStart_toEndOf="@id/imgDocuments"
+            app:layout_constraintTop_toTopOf="@id/imgDocuments" />
+
+        <ImageView
+            android:id="@+id/imgBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_vector"
+            app:layout_constraintBottom_toBottomOf="@id/tvDocuments"
+            app:layout_constraintEnd_toEndOf="@+id/glEnd"
+            app:layout_constraintTop_toBottomOf="@id/imgHelpCenter"
+            app:layout_constraintTop_toTopOf="@id/tvDocuments" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/colorHorizontalLine"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glBegin"
+            app:layout_constraintTop_toBottomOf="@id/imgDocuments" />
+
+        <ImageView
+            android:id="@+id/imgManageService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/bg_round"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_manage_service"
+            app:layout_constraintEnd_toStartOf="@id/tvManageService"
+            app:layout_constraintStart_toStartOf="@id/glBegin"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <TextView
+            android:id="@+id/tvManageService"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="@string/manage_service"
+            android:textColor="@color/colorBlackHelp"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="@id/imgManageService"
+            app:layout_constraintEnd_toStartOf="@id/imgBack2"
+            app:layout_constraintStart_toEndOf="@id/imgManageService"
+            app:layout_constraintTop_toTopOf="@id/imgManageService" />
+
+        <ImageView
+            android:id="@+id/imgBack2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_vector"
+            app:layout_constraintBottom_toBottomOf="@id/tvManageService"
+            app:layout_constraintEnd_toEndOf="@+id/glEnd"
+            app:layout_constraintTop_toTopOf="@id/tvManageService" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

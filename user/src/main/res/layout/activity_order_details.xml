@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:context="com.massttr.user.ui.main.myprofile.order_history.order_details.OrderDetailsActivity"
+        tools:visibility="visible">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/tool_bar" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_14sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_14sdp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/viewBottom"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toBottomOf="@+id/toolBar">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civProfile"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:background="@color/box_gray"
+                        app:civ_circle_background_color="@color/box_gray"
+                        android:layout_marginHorizontal="@dimen/_12sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvOrderName"
+                        style="@style/styleTextBold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlackHelp"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintBottom_toBottomOf="@id/civProfile"
+                        app:layout_constraintEnd_toStartOf="@id/tvOrderPrice"
+                        app:layout_constraintStart_toEndOf="@id/civProfile"
+                        app:layout_constraintTop_toTopOf="@id/civProfile"
+                        tools:text="Bugs Fixing" />
+
+                    <TextView
+                        android:id="@+id/tvOrderPrice"
+                        style="@style/styleTextBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlackHelp"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintBottom_toBottomOf="@id/civProfile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tvOrderName"
+                        app:layout_constraintTop_toTopOf="@id/civProfile"
+                        tools:text="$20" />
+
+                    <TextView
+                        android:id="@+id/tvOrderDescription"
+                        style="@style/styleTextRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/tex_grayTwo"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@id/tvOrderPrice"
+                        app:layout_constraintStart_toStartOf="@id/tvOrderName"
+                        app:layout_constraintTop_toBottomOf="@id/civProfile"
+                        tools:text="Data" />
+
+                    <TextView
+                        android:id="@+id/tvOrderStatus"
+                        style="@style/styleTextSemiMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/bg_round_order"
+                        android:backgroundTint="@color/color_blue_lite"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/_9sdp"
+                        android:textColor="@color/color_blue"
+                        app:layout_constraintStart_toStartOf="@id/tvOrderDescription"
+                        app:layout_constraintTop_toBottomOf="@id/tvOrderDescription"
+                        tools:text="@string/view_fixer" />
+
+                    <TextView
+                        android:id="@+id/tvEditPrice"
+                        style="@style/styleTextSemiMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@drawable/bg_round_order"
+                        android:backgroundTint="#FFF5D6"
+                        android:drawablePadding="@dimen/_3sdp"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_10sdp"
+                        android:textSize="@dimen/_9sdp"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryDark"
+                        app:drawableStartCompat="@drawable/ic_edit_yellow"
+                        app:layout_constraintEnd_toEndOf="@id/tvOrderPrice"
+                        app:layout_constraintTop_toBottomOf="@id/tvOrderDescription"
+                        tools:text="@string/edit_price" />
+
+                    <TextView
+                        android:id="@+id/tvOrderDate"
+                        style="@style/styleTextRegular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textColor="@color/tex_grayTwo"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvOrderStatus"
+                        tools:ignore="RtlCompat"
+                        tools:text="Date and Time" />
+
+                    <View
+                        android:id="@+id/viewDivider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginHorizontal="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:background="@color/box_gray"
+                        app:layout_constraintTop_toBottomOf="@id/tvOrderDate" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/fixerView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toTopOf="@id/tvTaskTitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/viewDivider"
+                        tools:visibility="visible">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ivFixerProfile"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:src="@drawable/img_profile"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvFixerName"
+                            style="@style/styleTextBold"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:maxLength="15"
+                            android:singleLine="true"
+                            android:textColor="@color/colorBlackHelp"
+                            android:textSize="@dimen/_13sdp"
+                            app:layout_constraintStart_toEndOf="@id/ivFixerProfile"
+                            app:layout_constraintTop_toTopOf="@id/ivFixerProfile"
+                            tools:text="Fixer Name" />
+
+                        <ImageView
+                            android:id="@+id/imgLocation"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:background="@drawable/round_drawable"
+                            android:backgroundTint="@color/light_yellow"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_location_yellow"
+                            app:layout_constraintBottom_toBottomOf="@id/tvFixerName"
+                            app:layout_constraintEnd_toStartOf="@id/imgCall"
+                            app:layout_constraintTop_toTopOf="@id/tvFixerName" />
+
+                        <ImageView
+                            android:id="@+id/imgCall"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/round_drawable"
+                            android:backgroundTint="@color/light_yellow"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_call_yellow"
+                            app:layout_constraintBottom_toBottomOf="@id/tvFixerName"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/tvFixerName" />
+
+                        <ImageView
+                            android:id="@+id/ivRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_rating_star"
+                            app:layout_constraintStart_toEndOf="@+id/ivFixerProfile"
+                            app:layout_constraintTop_toBottomOf="@id/tvFixerName" />
+
+                        <TextView
+                            android:id="@+id/tvFixerRating"
+                            style="@style/styleTextBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintBottom_toBottomOf="@id/ivRating"
+                            app:layout_constraintStart_toEndOf="@id/ivRating"
+                            app:layout_constraintTop_toTopOf="@id/ivRating"
+                            tools:text="4.5" />
+
+                        <TextView
+                            android:id="@+id/tvCompletedJobs"
+                            style="@style/styleTextSemiMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/_4sdp"
+                            android:gravity="center_vertical"
+                            android:text="@string/_28_completed"
+                            android:textColor="@color/colorGreen"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            app:drawableStartCompat="@drawable/ic_complete_task"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/ivRating"
+                            app:layout_constraintTop_toBottomOf="@id/ivRating" />
+
+                        <View
+                            android:id="@+id/viewDivider1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@color/box_gray"
+                            app:layout_constraintTop_toBottomOf="@id/tvCompletedJobs" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/tvTaskTitle"
+                        style="@style/styleTextBold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:paddingVertical="@dimen/_2sdp"
+                        android:text="@string/photos_of_the_task"
+                        android:textColor="@color/colorBlackHelp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fixerView" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvJobPhotos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:layout_constraintTop_toBottomOf="@id/tvTaskTitle"
+                        app:spanCount="3"
+                        tools:itemCount="6"
+                        tools:listitem="@layout/list_item_order_history_job_photo" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewBottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart">
+
+            <Button
+                android:id="@+id/tvCancelTask"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_button"
+                android:backgroundTint="@color/tex_grayTwo"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_14sdp"
+                android:text="@string/cancel_task"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_14sdp" />
+
+            <Button
+                android:id="@+id/tvCompleteTask"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient_button"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_14sdp"
+                android:text="@string/complete_task"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

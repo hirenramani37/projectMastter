@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/clMyViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_2sdp"
+            android:paddingStart="0dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvMyText"
+                style="@style/styleTextBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_box_bg"
+                android:text="android developer"
+                android:maxWidth="@dimen/_240sdp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_11ssp"
+                tools:text="I'm really excited to get the work started!" />
+
+            <TextView
+                android:id="@+id/tvSendTextMsgTime"
+                style="@style/styleTextRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textColor="@color/tex_grayTwo"
+                android:textSize="@dimen/_9ssp"
+                app:drawableEndCompat="@drawable/ic_check"
+                tools:text="16:59 pm" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clOtherViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvOtherText"
+                style="@style/styleTextBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_box_bg"
+                android:maxWidth="@dimen/_240sdp"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_11ssp"
+                tools:text="I'm really excited to get the work started!" />
+
+            <TextView
+                android:id="@+id/tvReceiveTextMsgTime"
+                style="@style/styleTextRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:textColor="@color/tex_grayTwo"
+                android:textSize="@dimen/_9ssp"
+                tools:text="16:59 pm" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

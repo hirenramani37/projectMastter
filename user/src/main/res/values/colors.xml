@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/white</color>
+    <color name="colorPrimaryDark">#FFCB31</color>
+    <color name="colorAccent">#FBE194</color>
+
+    <color name="colorWhite">@android:color/white</color>
+    <color name="colorBlack">@android:color/black</color>
+    <color name="colorBackground">#F8F8F8</color>
+    <color name="Lite_Yellow">#FBE194</color>
+    <color name="Black_Color">#333333</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorLightGray">#efefef</color>
+    <color name="colorBlackOverlay">#4D000000</color>
+    <color name="light_green">#E6F6EB</color>
+    <color name="dark_green">#00A031</color>
+    <color name="light_yellow">#FFF5D6</color>
+    <color name="dark_yellow">#FFCB31</color>
+    <color name="colorBlackTrans">#66000000</color>
+    <color name="colorWhiteOp60">#99FFFFFF</color>
+    <color name="colorTextGray">#3D3F50</color>
+    <color name="colorTextGrayDark">#4D555C</color>
+    <color name="colorTextOtpLine">#1A0C5E7B</color>
+    <color name="colorPrimaryDarkOp60">#99063A53</color>
+    <color name="colorGreen">#00A031</color>
+
+    <color name="chatHeaderBg">#E9EBEA</color>
+    <color name="chatHeaderText">#A7A7A7</color>
+
+    <color name="colorGreenChat">#00A031</color>
+    <color name="colorRed">#F15249</color>
+    <color name="tex_gray">#E5E5E5</color>
+    <color name="tex_grayTwo">#B5B7B9</color>
+    <color name="box_gray">#F4F6F8</color>
+    <color name="colorHorizontalLine">#F4F6F8</color>
+    <color name="colorBlackHelp">#333333</color>
+    <color name="colorPrivacyPolicyContent">#B5B7B9</color>
+    <color name="color_blue_lite">#E6EEF8</color>
+    <color name="color_blue">#0052B4</color>
+
+
+    <color name="default_background_color">#8800FF</color>
+    <color name="default_glow_color">#885BFC</color>
+
+
+    <!--Progress Colors-->
+    <color name="color_progress_bg">#C4C4C4</color>
+
+    <!--region App Toast Colors-->
+    <color name="colorToastWarning">#FDCF2F</color>
+    <color name="colorToastSuccess">#68AE3A</color>
+    <color name="colorToastError">#FF4747</color>
+
+    <!--endregion-->
+
+    <color name="yellow">#FFCB31</color>
+</resources>

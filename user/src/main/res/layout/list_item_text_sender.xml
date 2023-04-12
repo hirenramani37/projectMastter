@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvMyText"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sent_message_bubble"
+                android:maxWidth="@dimen/_230sdp"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_12sdp"
+                tools:text="Hey Alecander, I’m really excifd df df dsfds sfs fs dfs sdf fds sdf df sdfs fdsf dsfdsfds dsdf ds fds" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivMyStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_send" />
+
+                <TextView
+                    android:id="@+id/tvMyTime"
+                    style="@style/styleTextRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:textColor="@color/tex_grayTwo"
+                    android:textSize="@dimen/_9sdp"
+                    tools:text="16:59 pm" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

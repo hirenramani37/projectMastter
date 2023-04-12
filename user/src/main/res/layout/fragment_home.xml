@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                cardView:cardCornerRadius="8dp"
+                cardView:cardElevation="8dp">
+
+                <EditText
+                    android:id="@+id/EtSearch"
+                    style="@style/styleTextSemiMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="postalAddress"
+                    android:background="@drawable/bg_white_rc10"
+                    android:drawableEnd="@drawable/ic_live_location"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="@string/enter_name_of_location"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorBlackHelp"
+                    android:textColorHint="@color/tex_grayTwo"
+                    android:textSize="@dimen/_11sdp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fixerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_18sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                cardView:cardCornerRadius="8dp"
+                cardView:cardElevation="8dp">
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    style="@style/styleTextSemiMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@drawable/round_drawable"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:text="@string/_4_5km"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_11sdp"
+                    app:drawableStartCompat="@drawable/ic_location"
+                    app:layout_constraintBottom_toBottomOf="@id/tvFixerRating"
+                    app:layout_constraintEnd_toEndOf="@+id/btnChat"
+                    app:layout_constraintTop_toTopOf="@id/tvFixerName" />
+
+            </androidx.cardview.widget.CardView>
+
+            <fragment
+                android:id="@+id/gMap"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="fragment_map" />
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:background="@drawable/ic_add_task"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/ivTaskStart"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/ivTaskStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:background="@drawable/ic_add_task"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</layout>

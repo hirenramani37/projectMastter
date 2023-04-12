@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bg_pop_dialog_round">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:padding="@dimen/_7sdp"
+                android:text="@string/logout_s"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:id="@+id/tvLogoutContent"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/are_you_sure_want_to"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tvLogoutContent2"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/logout_s"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_14sdp" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/bg_gradient_logout_button"
+                android:paddingVertical="@dimen/_14sdp"
+                android:text="@string/logout"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvCancel"
+                style="@style/styleTextRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/tex_grayTwo"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

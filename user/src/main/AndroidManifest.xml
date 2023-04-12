@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.massttr.user">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Massttr"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.main.myprofile.order_history.order_details.showImage.ShowImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.register.create_profile.location.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.splash.InitialActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.language.LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.register.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.otpVerification.verified.VerifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.otpVerification.OTPVerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.register.create_profile.CreateProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.home.taskrequest.TaskRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.order_history.OrderHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.home.taskrequest.subCategory.SubCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.home.taskrequest.task_details.fixer_list.fixer_profile.photoTask.PhotosTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.order_history.order_details.OrderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.order_history.order_details.complete_task.CompleteTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.order_history.view_receipt.view_receipt_successfully.ViewReceiptSuccessfullyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.home.taskrequest.task_details.fixer_list.fixer_profile.book_fixer.give_review.rating.RatingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.help_center.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.order_history.view_receipt.ViewReceiptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.delete_account.DeleteAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.register.create_profile.success_create_profile.SuccessfullyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.home.taskrequest.task_details.TaskDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.home.taskrequest.task_details.fixer_list.FixerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.inbox.chat.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.home.taskrequest.task_details.fixer_list.fixer_profile.FixerProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.inbox.chat.edit_price.EditTaskPriceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.help_center.faq.FaqActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.help_center.privacy_policy.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.help_center.contactus.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.help_center.terms_condition.TermsConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.order_history.order_details.complete_task.TaskCompleteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.order_history.order_details.cancel_task.cancel_task_success.TaskCompleteDoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.order_history.order_details.cancel_task.CancelTasksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofile.edit_profile.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.home.taskrequest.task_details.fixer_list.fixer_profile.book_fixer.OrderAcceptedActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.main.home.LocationActivity" />
+        <activity android:name=".ui.main.inbox.chat.VideoViewActivity" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/maps_api_key" />
+
+        <service
+            android:name="com.common.fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT" /> -->
+            </intent-filter>
+        </service>
+        <service
+            android:name=".chat.SocketService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:stopWithTask="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+    </application>
+
+</manifest>

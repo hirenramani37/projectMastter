@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/navHomeFragment">
+
+    <fragment
+        android:id="@+id/navHomeFragment"
+        android:name="com.massttr.provider.ui.main.home.HomeFragment"
+        android:label="HomeFragment" />
+
+    <fragment
+        android:id="@+id/navAvailableTasksFragment"
+        android:name="com.massttr.provider.ui.main.availableTasks.AvailableTasksFragment"
+        android:label="AvailableTasksFragment" />
+
+    <fragment
+        android:id="@+id/navSettingFragment"
+        android:name="com.massttr.provider.ui.main.myUpcomingFix.MyUpcomingFixFragment"
+        android:label="SettingFragment" />
+
+    <fragment
+        android:id="@+id/navNotificationFragment"
+        android:name="com.massttr.provider.ui.main.notification.NotificationFragment"
+        android:label="NotificationFragment" />
+
+    <fragment
+        android:id="@+id/navMyProfileFragment"
+        android:name="com.massttr.provider.ui.main.myprofiles.ProfileFragment"
+        android:label="MyProfileFragment" />
+
+    <action
+        android:id="@+id/action_profile"
+        app:destination="@id/navMyProfileFragment" />
+
+    <action
+        android:id="@+id/action_availableTask"
+        app:destination="@id/navSettingFragment" />
+
+
+</navigation>

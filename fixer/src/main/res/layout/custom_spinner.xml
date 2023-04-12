@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tvItemText"
+        style="@style/styleTextSemiMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:textAlignment="viewStart"
+        android:textColor="@drawable/color_selector_spinner"
+        android:textSize="@dimen/_14sdp" />
+</layout>

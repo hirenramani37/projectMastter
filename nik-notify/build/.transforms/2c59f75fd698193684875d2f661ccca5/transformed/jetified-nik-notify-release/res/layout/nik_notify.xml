@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlNikNotify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvNikNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:outlineAmbientShadowColor="#314977"
+        android:outlineSpotShadowColor="#314977"
+        app:cardCornerRadius="@dimen/_6sdp"
+        app:cardElevation="@dimen/_8sdp"
+        app:cardUseCompatPadding="true"
+        tools:targetApi="p">
+        <!--        app:cardBackgroundColor="#314977"-->
+
+
+        <!--        android:background="#314977"-->
+        <LinearLayout
+            android:id="@+id/llNikNotify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:requiresFadingEdge="vertical"
+                tools:src="@drawable/ic_error" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    tools:text="@tools:sample/lorem/random" />
+
+                <!--                <com.nik.notify.widget.ViewMoreTextView-->
+                <!--                    android:id="@+id/tvMessage"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:textColor="@android:color/white"-->
+                <!--                    android:textSize="@dimen/_12sdp"-->
+                <!--                    app:duration="300"-->
+                <!--                    app:ellipsizeText="View More"-->
+                <!--                    app:ellipsizeTextColor="@color/colorViewMore"-->
+                <!--                    app:isExpanded="false"-->
+                <!--                    app:isUnderlined="true"-->
+                <!--                    app:visibleLines="2"-->
+                <!--                    tools:text="@tools:sample/lorem/random" />-->
+
+                <TextView
+                    android:id="@+id/tvMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    tools:text="@tools:sample/lorem/random" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:background="@drawable/bg_rc_action"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_11sdp"
+                tools:text="Retry" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

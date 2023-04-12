@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.myprofiles.manages.documents.DocumentsActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/tool_bar" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glBegin"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_15sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEnd"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_15sdp" />
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rvGetDocumentType"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginTop="@dimen/_5sdp"-->
+<!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--            tools:itemCount="1"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/toolbar"-->
+<!--            app:layout_constraintStart_toStartOf="@id/glBegin"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glEnd"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/btnView"-->
+<!--            tools:listitem="@layout/list_item_get_document_type" />-->
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/btnView"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glBegin"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvIdFront"-->
+<!--                        style="@style/styleTextSemiMedium"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:textColor="@color/colorBlackHelp"-->
+<!--                        android:textSize="@dimen/_14sdp"-->
+<!--                        tools:text="@string/national_id_front" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/btnAddFront"-->
+<!--                        style="@style/styleTextSemiMedium"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:background="@drawable/bg_round_chat"-->
+<!--                        android:drawablePadding="@dimen/_3sdp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:padding="@dimen/_5sdp"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:paddingHorizontal="@dimen/_8sdp"-->
+<!--                        android:paddingStart="@dimen/_10sdp"-->
+<!--                        android:paddingEnd="@dimen/_10sdp"-->
+<!--                        android:text="@string/add"-->
+<!--                        android:textColor="@color/colorBlackHelp"-->
+<!--                        android:textSize="@dimen/_11ssp"-->
+<!--                        app:drawableStartCompat="@drawable/ic_add" />-->
+
+<!--                </RelativeLayout>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvFrontDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="4"
+                    tools:listitem="@layout/lits_item_manage_documents" />
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_10sdp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tvIdBack"-->
+<!--                        style="@style/styleTextSemiMedium"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="@color/colorBlackHelp"-->
+<!--                        android:textSize="@dimen/_14sdp"-->
+<!--                        tools:text="@string/national_id_back" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/btnAddBack"-->
+<!--                        style="@style/styleTextSemiMedium"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:background="@drawable/bg_round_chat"-->
+<!--                        android:drawablePadding="@dimen/_3sdp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:padding="@dimen/_5sdp"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:paddingHorizontal="@dimen/_8sdp"-->
+<!--                        android:paddingStart="@dimen/_10sdp"-->
+<!--                        android:paddingEnd="@dimen/_10sdp"-->
+<!--                        android:text="@string/add"-->
+<!--                        android:textColor="@color/colorBlackHelp"-->
+<!--                        android:textSize="@dimen/_11ssp"-->
+<!--                        app:drawableStartCompat="@drawable/ic_add" />-->
+
+<!--                </RelativeLayout>-->
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/rvDocBack"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--                    tools:itemCount="1"-->
+<!--                    tools:listitem="@layout/lits_item_manage_documents" />-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_10sdp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/ResidenceCard"-->
+<!--                        style="@style/styleTextSemiMedium"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="@color/colorBlackHelp"-->
+<!--                        android:textSize="@dimen/_14sdp"-->
+<!--                        tools:text="@string/residence_card" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/btnResidence"-->
+<!--                        style="@style/styleTextSemiMedium"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:background="@drawable/bg_round_chat"-->
+<!--                        android:drawablePadding="@dimen/_3sdp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:padding="@dimen/_5sdp"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:paddingHorizontal="@dimen/_8sdp"-->
+<!--                        android:paddingStart="@dimen/_10sdp"-->
+<!--                        android:paddingEnd="@dimen/_10sdp"-->
+<!--                        android:text="@string/add"-->
+<!--                        android:textColor="@color/colorBlackHelp"-->
+<!--                        android:textSize="@dimen/_11ssp"-->
+<!--                        app:drawableStartCompat="@drawable/ic_add" />-->
+
+<!--                </RelativeLayout>-->
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/rvDocResidence"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--                    tools:itemCount="1"-->
+<!--                    tools:listitem="@layout/lits_item_manage_documents" />-->
+
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_10sdp">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/Resume"-->
+<!--                        style="@style/styleTextSemiMedium"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Resume"-->
+<!--                        android:textColor="@color/colorBlackHelp"-->
+<!--                        android:textSize="@dimen/_14sdp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/btnResume"-->
+<!--                        style="@style/styleTextSemiMedium"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:background="@drawable/bg_round_chat"-->
+<!--                        android:drawablePadding="@dimen/_3sdp"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:padding="@dimen/_5sdp"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:paddingHorizontal="@dimen/_8sdp"-->
+<!--                        android:paddingStart="@dimen/_10sdp"-->
+<!--                        android:paddingEnd="@dimen/_10sdp"-->
+<!--                        android:text="@string/add"-->
+<!--                        android:textColor="@color/colorBlackHelp"-->
+<!--                        android:textSize="@dimen/_11ssp"-->
+<!--                        app:drawableStartCompat="@drawable/ic_add" />-->
+
+<!--                </RelativeLayout>-->
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/rvResume"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--                    tools:itemCount="1"-->
+<!--                    tools:listitem="@layout/lits_item_manage_documents" />-->
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_60sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glBegin">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/styleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/box_gray">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/llDis"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_130sdp"
+            android:gravity="end"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/ivImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivImage"
+            app:layout_constraintTop_toTopOf="@id/ivImage">
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/styleTextRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/tex_grayTwo"
+                android:textSize="@dimen/_10sdp"
+                tools:text="25-5-2020" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:lines="2"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_12sdp"
+                tools:text="I need a plumber" />
+
+            <TextView
+                android:id="@+id/tvDis"
+                style="@style/styleTextRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:lines="2"
+                android:textAlignment="viewStart"
+                android:textColor="@color/tex_grayTwo"
+                android:textSize="@dimen/_12sdp"
+                tools:text="Lorem ipsum is simply dummy text of the printing and type" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:maxLength="10"
+            android:textColor="@color/colorBlackHelp"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/llDis"
+            tools:text="30000000000 QD" />
+
+        <TextView
+            android:id="@+id/tvKm"
+            style="@style/styleTextSemiMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/bg_round_chat"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center"
+            android:maxLength="9"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            app:drawableStartCompat="@drawable/ic_location_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="1.20000km" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

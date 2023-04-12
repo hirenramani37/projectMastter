@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.massttr.provider">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".MyApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Massttr"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.main.availableTasks.viewTask.showImage.ShowImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splash.InitialActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myUpcomingFix.cancelTask.cancelTasksDone.TaskCompleteDoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myUpcomingFix.cancelTask.CancelTasksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myUpcomingFix.startTasks.startTasksSuccess.StartTaskSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myUpcomingFix.startTasks.StartTasksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myUpcomingFix.taskDetails.chat.ChatActivity"
+            android:screenOrientation="portrait" />
+<!--        <activity-->
+<!--            android:name=".ui.main.myUpcomingFix.taskDetails.TaskDetailsActivity"-->
+<!--            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".ui.main.myUpcomingFix.startTasks.task.GoodJobActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myUpcomingFix.endTask.TaskEndActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.deleteAccount.DeleteAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.earning.EarningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.manages.manageServices.ManageServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.manages.documents.DocumentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.manages.ManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.completedTasks.viewReceipt.receiptSuccess.ViewReceiptSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.completedTasks.viewReceipt.ViewReceiptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.completedTasks.CompletedTasksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.inbox.InboxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.editProfile.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.helpCenter.contactUs.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.helpCenter.faq.FaqActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.helpCenter.privacyPolicy.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.helpCenter.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.register.verify.fixerRegistration.success.SuccessfullyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.myprofiles.manages.documents.addDocument.AddDocumentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.register.verify.fixerRegistration.FixerRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.register.verify.VerifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.register.verify.OTPVerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.register.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.availableTasks.viewTask.ViewTaskAcceptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.register.verify.fixerRegistration.FixerServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.language.login.register.verify.fixerRegistration.LocationActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/maps_api_key" />
+
+        <service
+            android:name="com.common.fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+<!--                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />-->
+            </intent-filter>
+        </service>
+        <service android:name=".ui.main.notification.DownloadInvoiceService" />
+        <service
+            android:name=".chat.FixerSocketService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:stopWithTask="false" />
+    </application>
+
+</manifest>

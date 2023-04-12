@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.language.login.register.create_profile.CreateProfileActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_16sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_16sdp" />
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/tool_bar" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@color/colorWhite"
+            app:layout_constraintBottom_toTopOf="@+id/btnProfileDone"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civProfile"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:src="@drawable/ic_placeholder"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <ImageView
+                        android:id="@+id/ivEditProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_camera_bg"
+                        app:layout_constraintBottom_toBottomOf="@id/civProfile"
+                        app:layout_constraintEnd_toEndOf="@id/civProfile" />
+
+                    <EditText
+                        android:id="@+id/etFullName"
+                        style="@style/styleTextSemiMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/editext_selector"
+                        android:hint="@string/please_enter_first_name"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/_15sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlackHelp"
+                        android:textColorHint="#B5B7B9"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/civProfile" />
+
+                    <LinearLayout
+                        android:id="@+id/lLEdittext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/editext_selector"
+                        android:padding="@dimen/_5sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/etFullName">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:src="@drawable/ic_iraq_flag" />
+
+                        <View
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:background="#B5B7B9" />
+
+                        <TextView
+                            android:id="@+id/tvMobileNu"
+                            style="@style/styleTextSemiMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:hint="@string/enter_mobile_number"
+                            android:padding="@dimen/_10sdp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorBlackHelp"
+                            android:textColorHint="@color/tex_grayTwo"
+                            android:textSize="@dimen/_12ssp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etEmailId"
+                        style="@style/styleTextSemiMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/editext_selector"
+                        android:hint="@string/enter_email_id"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_15sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlackHelp"
+                        android:textColorHint="@color/tex_grayTwo"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lLEdittext" />
+
+                    <TextView
+                        android:id="@+id/tvDOB"
+                        style="@style/styleTextSemiMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/editext_selector"
+                        android:gravity="center"
+                        android:hint="@string/enter_dob"
+                        android:padding="@dimen/_15sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlackHelp"
+                        android:textColorHint="@color/tex_grayTwo"
+                        android:textSize="@dimen/_12ssp"
+                        app:drawableEndCompat="@drawable/ic_date"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etEmailId"
+                        tools:ignore="RtlCompat" />
+
+                    <RadioGroup
+                        android:id="@+id/rvGender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDOB">
+
+                        <RadioButton
+                            android:id="@+id/rbMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/simple_radiobutton"
+                            android:checked="true"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:text="@string/male"
+                            android:textColor="@color/tex_grayTwo"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <RadioButton
+                            android:id="@+id/rbFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_80sdp"
+                            android:button="@drawable/simple_radiobutton"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:text="@string/female"
+                            android:textColor="@color/tex_grayTwo"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/etZip"
+                        style="@style/styleTextSemiMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/editext_selector"
+                        android:hint="@string/zip_code"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:padding="@dimen/_15sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlackHelp"
+                        android:textColorHint="@color/tex_grayTwo"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rvGender" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        app:layout_constraintTop_toBottomOf="@id/etZip">
+
+                        <EditText
+                            android:id="@+id/etAddress"
+                            style="@style/styleTextSemiMedium"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_80sdp"
+                            android:background="@drawable/edit_box_bg"
+                            android:gravity="top"
+                            android:hint="@string/address"
+                            android:importantForAutofill="no"
+                            android:lines="3"
+                            android:outlineProvider="none"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_18sdp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorBlackHelp"
+                            android:textColorHint="@color/tex_grayTwo"
+                            android:textSize="@dimen/_12sdp"
+                            tools:ignore="RtlCompat" />
+
+                        <ImageView
+                            android:id="@+id/btnLocation"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@drawable/circle_round"
+                            android:contentDescription="@string/app_name"
+                            android:padding="@dimen/_6sdp"
+                            android:src="@drawable/ic_map" />
+
+                    </RelativeLayout>
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_15sdp"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/etZip">-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/etAddress"-->
+<!--                            style="@style/styleTextSemiMedium"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="@dimen/_80sdp"-->
+<!--                            android:layout_marginBottom="@dimen/_20sdp"-->
+<!--                            android:background="@drawable/editext_selector"-->
+<!--                            android:gravity="top"-->
+<!--                            android:hint="@string/address"-->
+<!--                            android:inputType="textMultiLine"-->
+<!--                            android:lines="3"-->
+<!--                            android:outlineProvider="none"-->
+<!--                            android:padding="@dimen/_10sdp"-->
+<!--                            android:paddingHorizontal="@dimen/_10sdp"-->
+<!--                            android:paddingVertical="@dimen/_30sdp"-->
+<!--                            android:textAlignment="viewStart"-->
+<!--                            android:textColor="@color/colorBlackHelp"-->
+<!--                            android:textColorHint="@color/tex_grayTwo"-->
+<!--                            android:textSize="@dimen/_12ssp"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:ignore="RtlCompat" />-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/btnLocation"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/ic_location_yellow"-->
+<!--                            android:textAlignment="viewStart"-->
+<!--                            android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="@dimen/_5sdp"-->
+<!--                            android:src="@drawable/ic_line"-->
+<!--                            android:textAlignment="viewStart"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnProfileDone"
+            style="@style/styleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:text="@string/done"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

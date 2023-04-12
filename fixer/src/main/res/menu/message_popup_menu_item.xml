@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuIraq"
+        android:icon="@drawable/ic_iraq_language_roud_flag"
+        android:title="@string/arabic"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuEnglish"
+        android:icon="@drawable/ic_english_language_round_flag"
+        android:title="@string/english"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/tvClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cancel_popup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFilterDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/bg_dialog"
+            app:layout_constraintTop_toBottomOf="@+id/tvClose">
+
+            <TextView
+                android:id="@+id/tvDialogTitle"
+                style="@style/styleTextBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="@string/filter"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvRating"
+                style="@style/styleTextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/rating"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDialogTitle" />
+
+            <LinearLayout
+                android:id="@+id/ratingView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRating">
+
+                <ImageView
+                    android:id="@+id/rat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star" />
+
+                <ImageView
+                    android:id="@+id/rat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/ic_star_gray" />
+
+                <ImageView
+                    android:id="@+id/rat3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/ic_star_gray" />
+
+                <ImageView
+                    android:id="@+id/rat4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/ic_star_gray" />
+
+                <ImageView
+                    android:id="@+id/rat5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/ic_star_gray" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCompleteJobs"
+                style="@style/styleTextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/completed_jobs"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ratingView" />
+
+            <RelativeLayout
+                android:id="@+id/divSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCompleteJobs">
+
+                <hearsilent.discreteslider.DiscreteSlider
+                    android:id="@+id/discreteSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingTop="?actionBarSize"
+                    android:textAlignment="viewStart"
+                    app:ds_count="101"
+                    app:ds_inactiveTrackColor="@color/color_progress_bg"
+                    app:ds_maxProgress="0"
+                    app:ds_minProgress="0"
+                    app:ds_mode="range"
+                    app:ds_progressOffset="0"
+                    app:ds_thumbColor="@color/colorPrimaryDark"
+                    app:ds_thumbPressedColor="@color/colorTransparent"
+                    app:ds_thumbRadius="@dimen/_6sdp"
+                    app:ds_tickMarkColor="@color/colorPrimaryDark"
+                    app:ds_tickMarkDashLength="1dp"
+                    app:ds_tickMarkInactiveColor="@color/color_progress_bg"
+                    app:ds_tickMarkPatterns="dot,dash"
+                    app:ds_trackColor="@color/color_progress_bg"
+                    app:ds_trackWidth="@dimen/_8sdp"
+                    app:ds_valueLabelMode="showOnPressHold"
+                    app:ds_valueLabelTextColor="@color/colorWhite"
+                    app:ds_valueLabelTextSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvSeekBarStart"
+                style="@style/styleTextRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divSeekBar"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tvSeekBarEnd"
+                style="@style/styleTextRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divSeekBar"
+                tools:text="250" />
+
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/bg_gradient_button"
+                android:backgroundTint="@color/tex_grayTwo"
+                android:paddingVertical="@dimen/_12sdp"
+                android:text="@string/clear"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnFilterApply"
+                app:layout_constraintTop_toBottomOf="@id/tvSeekBarEnd" />
+
+            <Button
+                android:id="@+id/btnFilterApply"
+                style="@style/styleTextSemiMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/bg_gradient_button"
+                android:paddingVertical="@dimen/_12sdp"
+                android:text="@string/done"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlackHelp"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnClear"
+                app:layout_constraintTop_toBottomOf="@id/tvSeekBarEnd" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

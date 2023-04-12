@@ -1,0 +1,187 @@
+{
+  "project_info": {
+    "project_number": "1089325364141",
+    "firebase_url": "https://massttr-default-rtdb.firebaseio.com",
+    "project_id": "massttr",
+    "storage_bucket": "massttr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089325364141:android:8069ac479e2a1b6541e724",
+        "android_client_info": {
+          "package_name": "com.massttr.provider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089325364141-1t6tp1nu3h0he2nbkgr00dlsqvciqn67.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.provider",
+            "certificate_hash": "7e5bdf0769b1b1f124010f3430140b2b0bdcebea"
+          }
+        },
+        {
+          "client_id": "1089325364141-5i9jdtdgn9kdn4f6c871euhcumt5mato.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.provider",
+            "certificate_hash": "b4f90885fe43667854a0faae0a8f32c34d692899"
+          }
+        },
+        {
+          "client_id": "1089325364141-65j3l7cvlsgviihq0nj56arruvk1klii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.provider",
+            "certificate_hash": "7b70d0c516c5ecc32832d4bfb86c98144fadd0b9"
+          }
+        },
+        {
+          "client_id": "1089325364141-8i3l2g6kf7lhtn834ad3qvjv9c0pcjrf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.provider",
+            "certificate_hash": "afa4f4585e8ad09b08cc5596299c9ef448c47885"
+          }
+        },
+        {
+          "client_id": "1089325364141-lutofksqkahu9vhpa345508r2soo6fmp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.provider",
+            "certificate_hash": "e213c22b95ad2ee5ca538354aee923bf40a28481"
+          }
+        },
+        {
+          "client_id": "1089325364141-pis712kv06vfc6t1qis50j6j00bod08m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.provider",
+            "certificate_hash": "6b9da5ed4cd9a50191b83f53c6422855e6d04246"
+          }
+        },
+        {
+          "client_id": "1089325364141-vt32fe08t7p6sg5nmbmg39i1c44v7qp4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.provider",
+            "certificate_hash": "6d50ac587598b8a4764398c427980b193e0050b1"
+          }
+        },
+        {
+          "client_id": "1089325364141-acmmdkboocq9enh5el1cgrpi4o664alc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcErno1lw7aMASzdwBkgEf8zK-Ep5xbbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089325364141-acmmdkboocq9enh5el1cgrpi4o664alc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1089325364141-13l4q1qhu5t0edja8bkti0pmlialv30q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.massttr.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089325364141:android:a9474e87978a8e9341e724",
+        "android_client_info": {
+          "package_name": "com.massttr.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089325364141-aavbe8p7pqe3kq0ervmbd6kecbbco95s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.user",
+            "certificate_hash": "6b9da5ed4cd9a50191b83f53c6422855e6d04246"
+          }
+        },
+        {
+          "client_id": "1089325364141-abq179n7mdlhe3jeef138g852iba6uk3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.user",
+            "certificate_hash": "7b70d0c516c5ecc32832d4bfb86c98144fadd0b9"
+          }
+        },
+        {
+          "client_id": "1089325364141-r7nqs34hsg5rc5ddjgd5r1seh4bks2gb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.user",
+            "certificate_hash": "6d50ac587598b8a4764398c427980b193e0050b1"
+          }
+        },
+        {
+          "client_id": "1089325364141-rh6g2spvaueuhanf9osm89k3tm4055fg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.user",
+            "certificate_hash": "7e5bdf0769b1b1f124010f3430140b2b0bdcebea"
+          }
+        },
+        {
+          "client_id": "1089325364141-sa2au7917ckghsref9iub438fe84nio1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.user",
+            "certificate_hash": "afa4f4585e8ad09b08cc5596299c9ef448c47885"
+          }
+        },
+        {
+          "client_id": "1089325364141-vgvrhvq3daeao8a1udt15uu5be53jk64.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.massttr.user",
+            "certificate_hash": "e213c22b95ad2ee5ca538354aee923bf40a28481"
+          }
+        },
+        {
+          "client_id": "1089325364141-acmmdkboocq9enh5el1cgrpi4o664alc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcErno1lw7aMASzdwBkgEf8zK-Ep5xbbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089325364141-acmmdkboocq9enh5el1cgrpi4o664alc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1089325364141-13l4q1qhu5t0edja8bkti0pmlialv30q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.massttr.user"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
